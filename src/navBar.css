@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.navigation-bar-container{
+    display:flex;
+    justify-content:space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    align-items: center;
+}
+.color-black{
+    color: rgba(0, 0, 0, 0.673);
+}
+.nullify-button{
+    border: none;
+    cursor:pointer;
+}
+.navbar-menu{
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+.navBar-logo{
+    font-size: 30px;
+}
+.navBar-button{
+    background:white;
+}
