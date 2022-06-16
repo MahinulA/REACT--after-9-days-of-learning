@@ -14,19 +14,24 @@ class MyComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      navBar: <NavBar buttonClick={this.AboutMeEvent} />,
+      navBar: <NavBar AboutMeNav={this.AboutMeEvent} HomePageClick={this.HomePageEvent} BlogPageClick = {this.BlogPageEvent}/>,
       heroHeader: <HeroSection />,
-      aboutMe: <AboutMe />,
-      BlogContainer: <BlogContainer />
+      aboutMe:"",
+      blogContainer: ''
     };
-    // this.aboutMeNav =this.aboutMeNav.bind(this);
+    // this.AboutMeEvent =this.AboutMeEvent.bind(this);
   }
 
 
   AboutMeEvent = () =>{
     this.setState({aboutMe: <AboutMe />, heroHeader : ""});
   }
-
+  HomePageEvent =()=>{
+    this.setState({heroHeader: <HeroSection />, aboutMe: "", blogContainer: ""});
+  }
+  BlogPageEvent =()=>{
+    this.setState({heroHeader: "", aboutMe: "", blogContainer: <BlogContainer />});
+  }
 
   render() {
     return (
@@ -34,7 +39,7 @@ class MyComponent extends React.Component {
         {this.state.navBar}
         {this.state.heroHeader}
         {this.state.aboutMe}
-        {this.state.BlogContainer}
+        {this.state.blogContainer}
       </div>
     );
   }

@@ -70,3 +70,19 @@
 .blogFlex-item:last-child{
     width: 30%;
 }
+.blog-section-heading{
+    padding-bottom: 100px;
+}
+
+/* SPECIFIC CONTAINER BLOG  */
+.blog-content-container{
+    text-align:center;
+}
+.Blog-section-h1{
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+
+
+
